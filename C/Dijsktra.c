@@ -6,7 +6,7 @@
 #define PERM 1
 #define NIL -1
 
-int adj[MAX][MAX];//done
+int adj[MAX][MAX];
 int predecessor[MAX];
 int pathLength[MAX];
 int status[MAX];
@@ -27,7 +27,7 @@ void create_graph()
     int u,v,w;
     for(u=0,v=0;u!=-1 && v!=-1;)
     {
-        printf("\nEnter u and v_(-1 -1): ");
+        printf("\nEnter u and v (-1 -1 to stop): ");
         scanf("%d %d",&u,&v);
         if(u==-1 && v==-1)
             break;
